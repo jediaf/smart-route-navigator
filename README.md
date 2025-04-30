@@ -15,12 +15,6 @@ A web-based interactive map application to find the shortest route between two p
 
 ---
 
-## 📸 Screenshots
-
-![screenshot](screenshots/demo.png) <!-- optional: add your own screenshot -->
-
----
-
 ## 🧱 Technologies Used
 
 | Component     | Technology        |
@@ -33,4 +27,5 @@ A web-based interactive map application to find the shortest route between two p
 ---
 
 ## 📁 Project Structure
+smart-route-navigator/ ├── index.html # Main HTML layout ├── style.css # Styling and layout ├── script.js # Map + logic ├── dijkstra.js # Dijkstra algorithm ├── graph-data.json # Nodes and weighted edges ├── README.md
 
