@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Smart Route Navigator</title>
+
+    <!-- Leaflet CSS -->
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+    />
+
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <header>
+        <h1>Smart Route Navigator</h1>
+        <p>Shortest Path Finder using Dijkstra's Algorithm</p>
+      </header>
+
+      <div class="controls">
+        <div class="instructions">
+          <p>Click on the map to select start and destination points.</p>
+          <button id="resetBtn">Reset</button>
+        </div>
+
+        <div class="info-panel">
+          <div id="pathInfo" class="hidden">
+            <h3>Route Information</h3>
+            <p>Distance: <span id="distance">0</span> meters</p>
+            <p>Estimated Time: <span id="duration">0</span> minutes</p>
+            <h4>Steps:</h4>
+            <ol id="steps"></ol>
+          </div>
+        </div>
+      </div>
+
+      <div id="map"></div>
+    </div>
+
+    <!-- Leaflet JS -->
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+
+    <!-- Project Files -->
+    <script src="dijkstra.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>
